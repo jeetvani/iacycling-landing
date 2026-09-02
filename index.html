@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IA Cycling — Descarga la app</title>
-<meta name="description" content="Tu entrenador de ciclismo con IA, siempre contigo. Descarga IA Cycling en App Store o Google Play.">
+<meta name="description" content="Tu entrenador de ciclismo, siempre contigo. Descarga IA Cycling en App Store o Google Play.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -88,6 +88,32 @@
     margin:0 auto 40px;
     line-height:1.55;
   }
+
+  /* Precio / prueba gratis */
+  .price-block{margin:0 auto 22px;}
+  .price-badge{
+    display:inline-block;
+    background:var(--black);
+    color:var(--white);
+    font-size:12.5px;font-weight:700;letter-spacing:.2px;
+    padding:7px 16px;border-radius:999px;
+    margin-bottom:12px;
+  }
+  .price-amount{font-size:18px;font-weight:600;color:var(--gray-900);margin-bottom:4px;}
+  .price-amount strong{color:var(--green-dark);font-size:23px;font-weight:800;}
+  .price-note{font-size:13px;color:var(--gray-600);}
+
+  /* Beneficios */
+  .benefits-list{
+    list-style:none;
+    display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;
+    margin:22px auto 34px;max-width:640px;
+  }
+  .benefits-list li{
+    display:flex;align-items:center;gap:7px;
+    font-size:14px;font-weight:600;color:var(--gray-900);
+  }
+  .benefits-list li svg{width:18px;height:18px;flex-shrink:0;color:var(--green-dark);}
 
   /* Store buttons */
   .store-row{
@@ -217,8 +243,20 @@
 <section class="hero">
   <div class="hero-inner">
     <span class="eyebrow"><span class="eyebrow-dot"></span>Disponible en App Store y Google Play</span>
-    <h1>Tu entrenador de ciclismo<br>con <span class="accent">IA</span>, siempre contigo</h1>
+    <h1>Tu entrenador de ciclismo,<br>siempre contigo</h1>
     <p class="sub">Planes 100% personalizados, ajustes continuos según tu progreso y soporte 24/7. Descarga la app y empieza a mejorar desde hoy.</p>
+
+    <div class="price-block">
+      <span class="price-badge">🎁 30 días gratis</span>
+      <p class="price-amount">Después, solo <strong>24,97&nbsp;€/mes</strong></p>
+      <p class="price-note">Pago mensual · sin permanencia · cancela cuando quieras</p>
+    </div>
+
+    <ul class="benefits-list">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Planificación 100% personalizada</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Entrenador IA disponible 24/7</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Se adapta a tu progreso cada semana</li>
+    </ul>
 
     <div id="descarga" class="store-row">
       <a id="apple-btn" class="store-btn" href="https://apps.apple.com/us/app/ia-cycling/id6740517777" target="_blank" rel="noopener">
